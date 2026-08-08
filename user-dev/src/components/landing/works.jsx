@@ -32,7 +32,7 @@ const Works = () => {
     },
   ];
   return (
-    <div className="features-container">
+    <div className="features-container" id="works">
       <h2 className="features-title">How it works?</h2>
       <div className="features">
         {works.map((work) => (

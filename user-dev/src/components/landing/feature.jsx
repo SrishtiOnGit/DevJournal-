@@ -39,7 +39,7 @@ const Feature = () => {
     },
   ];
   return (
-    <div className="features-container">
+    <div className="features-container" id="features">
       <h2 className="features-title">Everything You Need</h2>
       <div className="features">
         {features.map((feature) => (
