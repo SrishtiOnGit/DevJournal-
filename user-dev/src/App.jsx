@@ -9,6 +9,7 @@ import Footer from "./components/landing/footer";
 import About from "./components/about/about";
 import SignUp from "./components/auth/signup";
 import SignIn from "./components/auth/login";
+import Dashboard from "./components/dashboard/dashboard";
 
 function HomePage() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<SignIn />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

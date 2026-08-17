@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-
-import "./navbar.css";
+import { FaRegUser } from "react-icons/fa";
+import "./dash-nav.css";
 
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +21,13 @@ const Navbar = () => {
       <Link to="/">
         <h1 className="nav-logo">DevJournal</h1>
       </Link>
-      <input type="text" placeholder="Search" />
-      <button className="dash-nav-btn">Logout</button>
-      <button className="dash-nav-btn">Logout</button>
+      <input className="dash-nav-input" type="text" placeholder="Search.." />
+      <div className="btn-group">
+        <button className="dash-nav-btn">Logout</button>
+        <button className="dash-nav-btn">
+          <FaRegUser />
+        </button>
+      </div>
     </nav>
   );
 };
