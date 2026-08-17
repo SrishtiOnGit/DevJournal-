@@ -23,34 +23,9 @@ const Navbar = () => {
       <Link to="/">
         <h1 className="nav-logo">DevJournal</h1>
       </Link>
-
-      <ul className="nav-links">
-        <li>
-          <a href="#features" className="nav-items">
-            Features
-          </a>
-        </li>
-        <li>
-          <Link to="/about" className="nav-items">
-            About
-          </Link>
-        </li>
-        <li>
-          <a href="#works" className="nav-items">
-            How it Works
-          </a>
-        </li>
-      </ul>
-      <div className="nav-items">
-        <button className="btn-other" onClick={() => navigate("/login")}>
-          Sign In
-        </button>
-      </div>
-      <div className="nav-items">
-        <button className="btn" onClick={() => navigate("/signup")}>
-          Get Started
-        </button>
-      </div>
+      <input type="text" placeholder="Search" />
+      <button className="dash-nav-btn">Logout</button>
+      <button className="dash-nav-btn">Logout</button>
     </nav>
   );
 };

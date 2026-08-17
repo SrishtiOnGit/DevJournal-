@@ -1,0 +1,36 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup h1 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+.signup p {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.login-p p {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+.login-p a {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.signup input {
+  margin-bottom: 20px;
+  width: 20%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: var(--surface);
+}
